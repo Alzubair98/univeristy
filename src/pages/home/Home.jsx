@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ChooseSection from "../../components/ChooseSection/ChooseSection";
 import "./home.css";
 const Home = () => {
   return (
@@ -43,6 +44,10 @@ const Home = () => {
           </div>
         </div>
       </header>
+
+      <div className="py-5">
+        <ChooseSection />
+      </div>
     </div>
   );
 };
