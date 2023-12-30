@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import ChooseSection from "../../components/ChooseSection/ChooseSection";
 import "./home.css";
+import StartCousesImg from "../../utils/images/start-courses-img.jpg";
+
 const Home = () => {
   return (
     <div className="home-page">
@@ -47,6 +49,32 @@ const Home = () => {
 
       <div className="py-5">
         <ChooseSection />
+      </div>
+
+      <div className="py-5 bg-light">
+        {" "}
+        <div className="container">
+          <div className="row d-flex align-items-center justify-content-around">
+            <div className="col-lg-5">
+              <h2 className="text-capitalize">2024 start courses</h2>
+              <p>
+                Lore ipsum door sit amet consecteture adipisicing elit.
+                Delectus, placeat.
+              </p>
+              <Link to="/departments">
+                <button
+                  type="button"
+                  className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0"
+                >
+                  leanr more
+                </button>
+              </Link>
+            </div>
+            <div className="col-lg-5 mt-5 mt-lg-0">
+              <img src={StartCousesImg} className="img-fluid" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
