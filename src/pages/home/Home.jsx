@@ -3,6 +3,36 @@ import ChooseSection from "../../components/ChooseSection/ChooseSection";
 import "./home.css";
 import StartCousesImg from "../../utils/images/start-courses-img.jpg";
 import FaqAccordion from "../../components/FaqAccordion/FaqAccordion";
+import { Card } from "react-bootstrap";
+import Blog1Img from "../../utils/images/blog1-img.jpg";
+import Blog2Img from "../../utils/images/blog2-img.jpg";
+import Blog3Img from "../../utils/images/blog3-img.jpg";
+
+const blogs = [
+  {
+    id: 1,
+    img: [Blog1Img],
+    title: "Blog 1",
+    description:
+      "here is my first blog image suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+  },
+
+  {
+    id: 2,
+    img: [Blog2Img],
+    title: "Blog 2",
+    description:
+      "here is my first blog image suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+  },
+
+  {
+    id: 3,
+    img: [Blog3Img],
+    title: "Blog 3",
+    description:
+      "here is my first blog image suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+  },
+];
 
 const Home = () => {
   return (
@@ -79,6 +109,29 @@ const Home = () => {
       </div>
       <div className="py-5">
         <FaqAccordion />
+      </div>
+
+      <div className="blog-section text-light py-5">
+        <div className="container d-flex flex-column align-items-center">
+          <h2 className="text-center text-capitalize mb-5">
+            Latest on the blog
+          </h2>
+          <div className="row g-4">
+            {blogs.map((blog) => (
+              <div key={blog.id} className="col-md-6 col-lg-4">
+                <Link to="/blog" className="text-decoration-none">
+                  <Card className="h-100 shadow scale-hover-effect">
+                    <Card.Img variant="top" src={blog.img} />
+                    <Card.Body className="p-md-5">
+                      <Card.Title>{blog.title}</Card.Title>
+                      <Card.Text>{blog.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
