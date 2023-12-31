@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ChooseSection from "../../components/ChooseSection/ChooseSection";
 import "./home.css";
 import StartCousesImg from "../../utils/images/start-courses-img.jpg";
+import FaqAccordion from "../../components/FaqAccordion/FaqAccordion";
 
 const Home = () => {
   return (
@@ -75,6 +76,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="py-5">
+        <FaqAccordion />
       </div>
     </div>
   );
