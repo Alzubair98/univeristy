@@ -131,6 +131,11 @@ const Home = () => {
               </div>
             ))}
           </div>
+          <Link to="/blog">
+            <button type="button" className="btn btn-danger btn-lg mt-5">
+              Read More Blogs
+            </button>
+          </Link>
         </div>
       </div>
     </div>
