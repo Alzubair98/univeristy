@@ -117,6 +117,10 @@ const departments = [
   },
 ];
 
+const answer1 = "hello baby this is me ";
+const answer2 =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas ultricies mi eget mauris pharetra. Faucibus ornaresuspendisse sed nisi lacus sed viverra tellus in. Dignissim enim sit amet venenatis urna cursus. Non tellus orci ac auctor. Est ante in nibh mauris cursus mattis molestie a iaculis. Cras sed felis eget velit aliquet sagittis id consectetur.";
+
 const Departments = () => {
   return (
     <div className="departments-page">
@@ -154,7 +158,13 @@ const Departments = () => {
       </div>
 
       <div className="bg-dark text-light py-5">
-        <FaAccordion />
+        <FaAccordion
+          answer1={answer1}
+          answer2={answer2}
+          answer3={answer1}
+          answer4={answer1}
+          answer5={answer2}
+        />
       </div>
     </div>
   );
