@@ -1,0 +1,46 @@
+.home-page header {
+  background-image: linear-gradient(
+      rgba(5, 10, 35, 0.75),
+      rgba(5, 10, 35, 0.75)
+    ),
+    url(../../utils/images/home-page-header.jpg);
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.blog-section {
+  background-image: linear-gradient(
+      rgba(5, 10, 35, 0.75),
+      rgba(5, 10, 35, 0.75)
+    ),
+    url(../../utils/images/blog-section-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.scale-hover-effect {
+  transition: transform 0.5s ease;
+}
+
+.scale-hover-effect:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
