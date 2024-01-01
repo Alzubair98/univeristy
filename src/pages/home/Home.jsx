@@ -34,6 +34,10 @@ const blogs = [
   },
 ];
 
+const answer1 = "hello baby this is me ";
+const answer2 =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas ultricies mi eget mauris pharetra. Faucibus ornaresuspendisse sed nisi lacus sed viverra tellus in. Dignissim enim sit amet venenatis urna cursus. Non tellus orci ac auctor. Est ante in nibh mauris cursus mattis molestie a iaculis. Cras sed felis eget velit aliquet sagittis id consectetur.";
+
 const Home = () => {
   return (
     <div className="home-page">
@@ -108,7 +112,13 @@ const Home = () => {
         </div>
       </div>
       <div className="py-5">
-        <FaqAccordion />
+        <FaqAccordion
+          answer1={answer2}
+          answer2={answer2}
+          answer3={answer2}
+          answer4={answer1}
+          answer5={answer1}
+        />
       </div>
 
       <div className="blog-section text-light py-5">
