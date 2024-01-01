@@ -37,19 +37,19 @@ const Navbarr = () => {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-end w-100">
-              <Nav.Link href="/" className="text-uppercase">
+              <Nav.Link href="./" className="text-uppercase">
                 Home
               </Nav.Link>
-              <Nav.Link href="/Departments" className="text-uppercase">
+              <Nav.Link href="./Departments" className="text-uppercase">
                 Departments
               </Nav.Link>
-              <Nav.Link href="/about" className="text-uppercase">
+              <Nav.Link href="./about" className="text-uppercase">
                 About
               </Nav.Link>
-              <Nav.Link href="/blog" className="text-uppercase">
+              <Nav.Link href="./blog" className="text-uppercase">
                 Blog
               </Nav.Link>
-              <Nav.Link href="/contact" className="text-uppercase">
+              <Nav.Link href="./contact" className="text-uppercase">
                 Contact
               </Nav.Link>
             </Nav>
